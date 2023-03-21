@@ -14,52 +14,60 @@
     <script src="index.js"></script>
 
   </head>
-  <header>
+  <body>
+    <header>
+        <a href="#home" class="logo">Logo</a>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <button onclick="topFunction()" id="topbutton" title="Return to Top"> &#8593</button>
+    <section class="starwrapper">
+        <div class="wrapper">
+          <div id="stars"></div>
+          <div id="stars2"></div>
+        </div>
+    </section>
 
-            <a href="#home" class="logo">Logo</a>
-            
-
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </header>
-        <section class="home">
-            <section class="wrapper">
-            <div id="stars"></div>
-            <div id="stars2"></div>
-
-             </section>
-      <body>
-      
-      <div class="home" id="home">
-       <section class="home_top">
-        <button onclick="topFunction()" id="topbutton" title="Return to Top"> &#8593</button>
+    <section id="home">
+      <div class="home_top">
         <h1> Hi! I'm Leah :)
         <br>Welcome to my Portfolio</h1>
         <img src="homeicon.gif" class="moongif">
-       </section>
       </div>
-       </section>
-      <div class="skills" id="skills">
-        <section class="aboutme"> 
-            <img src="selfportrait.png" class="selfportrait">
-            <div class="abtmetext"> hi im super duper cool </div>
-        </section>
-        <section class="skills"> 
-            <ul class="skilllist">
-                <li><h2>After Effects</h2>  &#9733;  &#9733;  &#9733;  &#9733; &#9734;</li> 
-                <li><h2> Blender </h2>  &#9733;  &#9733;  &#9733; &#9734; &#9734;</li>  
-                <li><h2> Python ? </h2>  &#9733;  &#9733; &#9734; &#9734; &#9734;</li> 
-                <li><h2> Photoshop </h2>  &#9733;  &#9733;  &#9733; &#9734; &#9734;</li>   
-            </ul>
-        </section>
+    </section>
+    
+    <section id="skills">
+      <div class="aboutme"> 
+          <img src="selfportrait.png" class="selfportrait">
+          <div class="abtmetext"> hi im super duper cool </div>
       </div>
-      <div class="projects" id="projects">
-        uhhhhhhhhhhhhhhhh AAAAAAAAAAAAAAAAAAAAAa
+      <div class="skills"> 
+          <ul class="skilllist">
+              <li><h2>After Effects</h2>  &#9733;  &#9733;  &#9733;  &#9733; &#9734;</li> 
+              <li><h2> Blender </h2>  &#9733;  &#9733;  &#9733; &#9734; &#9734;</li>  
+              <li><h2> Python ? </h2>  &#9733;  &#9733; &#9734; &#9734; &#9734;</li> 
+              <li><h2> Photoshop </h2>  &#9733;  &#9733;  &#9733; &#9734; &#9734;</li>   
+          </ul>
       </div>
+    </section>
+
+    <section id="projects">
+      <div id="ProjectFilter">
+        <ul class="filtermenu">
+          <li li class="active" data-filter="*">all</li>
+          <li data-filter="3d">black</li>
+          <li data-filter="web">red</li>
+          <li data-filter="art">blue</li>
+        </ul>
+      </div>
+
+      
+      
+    </section>
     
   </body>
 </html>

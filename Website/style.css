@@ -11,6 +11,7 @@ html {
 
 body {
   min-height: 100vh;
+  width: 100vw;
   display: flex;
   border-radius: 2rem;
   font-family: 'Josefin Sans', serif;
@@ -20,14 +21,11 @@ body {
 }
 
 .container {
-  width: 100%;
-  height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
-
-
 header {
-    
     position: fixed;
     top: 0;
     left: 0;
@@ -36,23 +34,18 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
 }
 
-header .logo
-{
+header .logo {
     color: #DDE6EC;
     font-weight: 500;
     text-decoration: none;
     font-size: 2em;
     letter-spacing: 2px;
     text-shadow: 1px 1px 2px #1B1322;
-
-   
 }
 
-header ul
-{
+header ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,26 +73,20 @@ header ul li a:hover{
 
 
 
-.skills {
- 
- background-color: #cfcdd1;
- align-items: center;
- justify-content: center;
- height: 1200px;
- width:100%;
- overflow: hidden;
- display: flex;
- flex-direction: row;
-
-
-
-
-
-
+#skills {
+    background-color: #cfcdd1;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    position:relative;
+    z-index: 10;
 }
 
-.skills > div {
-    
+#skills > div { 
     text-align: center;
     font-size: 30px;
     color: #1b1322;
@@ -115,7 +102,6 @@ header ul li a:hover{
 }
 
 .selfportrait {
-    
     width: 500px;
     height: 500px;
 }
@@ -128,14 +114,13 @@ header ul li a:hover{
     text-align: center;
     font-size: 25px;
     color: #1b1322;
-    padding: 200px;
     
 }
 
 .skilllist h2{
- color: #1b1322;
- justify-content: space-around;
- padding: 20px;
+    color: #1b1322;
+    justify-content: space-around;
+    padding: 20px;
 }
 
 .skilllist li{
@@ -144,25 +129,88 @@ header ul li a:hover{
    align-items: center;
 }
 
-.projects {
- background-color: #724E91;
- text-align: center;
- font-size: 30px;
- color: #1b1322;
- padding: 100px;
- display: flex;
- flex: 50%;
- align-items: center;
- justify-content: center;
- height: 2000px;
- width:100%;
- overflow: hidden;
+#projects {
+    background-color: #724E91;
+    text-align: center;
+    font-size: 30px;
+    color: #1b1322;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position:relative;
+    z-index: 10;
+}
 
+.filtermenu {
+	width:80%;
+	margin: 20px auto;
+	text-align: center;
+}
+
+li .filtermenu {
+		border: 1px solid #CCC;
+		padding: 4px 12px;
+		display: inline-block;
+		border-radius: 6px;
+		cursor: pointer;
+		 
+		 
+}
+
+li .filtermenu &.active {
+    background:#CCC;
 }
 
 
 
 
+/*.filterDiv {
+    background-color:#a4bdd3;
+    color: #dde6ec;
+    /*display: flex;
+    flex-wrap: wrap;
+    
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+    text-align: center;
+    justify-content: space-around;
+    margin: 2px;
+    display: none; 
+  }
+  
+  The "show" class is added to the filtered elements 
+  .show {
+    display: block;
+  }
+  
+  Style the buttons 
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  Add a light grey background on mouse-over 
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  Add a dark background to the active button 
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+*/
 
 
 h1 {
@@ -187,9 +235,10 @@ h2 .home {
   
 }
 
-.home{
+#home{
     background: linear-gradient( #111112,#4C285B);
-    height: 1350px;
+    height: 100vh;
+    width: 100vw;
 }
 
 .home_top {
@@ -197,12 +246,8 @@ h2 .home {
      flex-direction: row;
      justify-content: center;
      align-items:  center;
-     
-     padding-bottom: 15.5%;
-     height: auto;
-     
-
-
+     height: 100vh;
+     width: 100vw;
 }
 
 .aboutme {
@@ -277,7 +322,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-
+.starwrapper {
+    height: 0px;
+    position: relative;
+    z-index: 1;
+}
 
 
 
