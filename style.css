@@ -16,6 +16,7 @@ body {
   border-radius: 2rem;
   font-family: 'Josefin Sans', serif;
   flex-direction: column;
+  overflow-x: hidden;
   
 
 }
@@ -32,33 +33,36 @@ header {
     width: 100%;
     padding:30px 100px;
     display: flex;
+    font-size: 1.5vw;
     align-items: center;
     justify-content: space-around;
+    z-index: 10;
+
 }
 
 header .logo {
-    color: #DDE6EC;
-    font-weight: 500;
-    text-decoration: none;
-    font-size: 2em;
+    width: 15%;
+}
+
+header ul {
+    
+    display: flex;
+    justify-content: right;
+    padding-right: 10%;
+    align-items: center;
     letter-spacing: 2px;
     text-shadow: 1px 1px 2px #1B1322;
 }
 
-header ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 1px 1px 2px #1B1322;
-}
-
 header ul li {
+    
     list-style: none;
     margin-left: 60px;
     
 }
 
 header ul li a{
+    
     text-decoration: none;
     color: #DDE6EC; 
 }
@@ -69,7 +73,33 @@ header ul li a:hover{
     color: #A4BDD3; 
 }
 
+.navbar{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.nav-link{
+  transition: 0.3s ease-out;
+}
 
 
 
@@ -216,7 +246,7 @@ li .filtermenu &.active {
 h1 {
     font-weight: 500;
     text-decoration: none;
-    font-size: 3em;
+    font-size: 4vw;
     letter-spacing: 2px;
     color: #DDE6EC; 
     font-family: 'Josefin Sans', serif;
@@ -327,11 +357,6 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     z-index: 1;
 }
-
-
-
-
-
 
 
 #stars {
@@ -834,3 +859,61 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+
+@media screen and (max-width: 720px){
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:30px 100px;
+    display: flex;
+    font-size: 2vw;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+header ul {
+    display: block;
+    justify-content: space-evenly;
+    float: center;
+    align-items: center;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px #1b1322;
+    align-content: center;
+    flex-direction: column;
+    transition: 0.3s;
+}
+header li {
+    
+  }
+header li a {
+    padding: 20px 30px;
+    margin: 16px 0;
+  }
+
+ .hamburger{
+   display: block;
+   cursor: pointer;
+ }
+
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+header ul.active{
+    left: 0;
+  }
+
+
+
+
+}
