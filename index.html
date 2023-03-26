@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display">
+
+ <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+<!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" href="./music.ico" type="image/x-icon">
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Josefin+Sans">
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=DM+Serif+Display">
-    <script src="index.js"></script>
+
+<!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="./js/index.js"></script>
+
+
+  
+
 
   </head>
   <body>
     <header>
-        <img src="logo.png" href="#home" class="logo">
+        <a  href="#home" ><img src="./images/logo.png"class="logo"></a>
         <nav  class="menu" class="navbar" id="topmenu">
             <ul class="nav-menu">
                 <li class="nav-item" ><a href="#home" class="nav-link">Home</a></li>
@@ -40,26 +62,51 @@
     </section>
 
     <section id="home">
-      <div class="home_top">
-        <h1> Hi! I'm Leah :)
-        <br>Welcome to my Portfolio</h1>
-        <img src="homeicon.gif" class="moongif">
+      <div class="container">
+        <div class="home_top_text">
+          <h1> Hi! I'm Leah :)
+          <br>Welcome to my Portfolio</h1>
+        </div>
+        <div class="home_top_pic">
+          <img src="./images/homeicon.gif" class="moongif">
+        </div>
       </div>
+
     </section>
     
     <section id="skills">
-      <div class="aboutme"> 
-          <img src="selfportrait.png" class="selfportrait">
-          <div class="abtmetext"> hi im super duper cool </div>
-      </div>
-      <div class="skills"> 
-          <ul class="skilllist">
-              <li><h2>After Effects</h2>  &#9733;  &#9733;  &#9733;  &#9733; &#9734;</li> 
-              <li><h2> Blender </h2>  &#9733;  &#9733;  &#9733; &#9734; &#9734;</li>  
-              <li><h2> Python ? </h2>  &#9733;  &#9733; &#9734; &#9734; &#9734;</li> 
-              <li><h2> Photoshop </h2>  &#9733;  &#9733;  &#9733; &#9734; &#9734;</li>   
-          </ul>
-      </div>
+      <div class="container">
+        <div class="aboutme"> 
+            <img src="./images/selfportrait.png" class="selfportrait">
+            <div class="abtmetext"> hi im super duper cool </div>
+        </div>
+        <div class="skills"> 
+            <h2>After Effects</h2>
+            <div class="skillcontainer">
+              <div class="ae">
+              </div>
+            </div>
+
+            <h2>Blender</h2>
+            <div class="skillcontainer">
+              <div class="blender">
+              </div>
+            </div>
+
+            <h2>Photoshop</h2>
+            <div class="skillcontainer">
+              <div class="ps">
+              </div>
+            </div>
+
+            <h2>HTML - CSS - JS</h2>
+            <div class="skillcontainer">
+              <div class="web">
+              </div>
+            </div>
+
+        </div>
+     </div>
     </section>
 
     <section id="projects">
