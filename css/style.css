@@ -114,7 +114,7 @@ header ul li a:hover{
     background-color: #cfcdd1;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: auto;
     width: 100vw;
     overflow: hidden;
     display: flex;
@@ -139,6 +139,7 @@ header ul li a:hover{
     align-items: start;
     justify-items: center;
     height: 0%;
+    
 }
 
 #skills > .container {
@@ -163,6 +164,7 @@ header ul li a:hover{
 .skills {
   height: 50%;
   width: 100%;
+  padding-bottom: 10px;
   
 }
 
@@ -241,78 +243,132 @@ header ul li a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: auto;
     width: 100vw;
     overflow: hidden;
     position:relative;
     z-index: 10;
 }
 
-.filtermenu {
-	width:80%;
-	margin: 20px auto;
-	text-align: center;
-}
+.projectgallery {
+	display: flex;
+  justify-content: center;
+	padding: 2px;
+	transition: .3s;
+  width: 100vw;
 
-li .filtermenu {
-		border: 1px solid #CCC;
-		padding: 4px 12px;
-		display: inline-block;
-		border-radius: 6px;
-		cursor: pointer;
-		 
-		 
-}
-
-li .filtermenu .active {
-    background:#CCC;
 }
 
 
-
-
-/*.filterDiv {
-    background-color:#a4bdd3;
-    color: #dde6ec;
-    /*display: flex;
-    flex-wrap: wrap;
+.projectgallery_column {
+		display: flex;
+		flex-direction: column;
+		width: 25%;
     
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
-    grid-gap: 15px;
-    text-align: center;
-    justify-content: space-around;
-    margin: 2px;
-    display: none; 
-  }
-  
-  The "show" class is added to the filtered elements 
-  .show {
+	}
+
+  .projectgallery_image{
     display: block;
-  }
-  
-  Style the buttons 
-  .btn {
-    border: none;
-    outline: none;
-    padding: 12px 16px;
-    background-color: #f1f1f1;
-    cursor: pointer;
-  }
-  
-  Add a light grey background on mouse-over 
-  .btn:hover {
-    background-color: #ddd;
-  }
-  
-  Add a dark background to the active button 
-  .btn.active {
-    background-color: #666;
-    color: white;
+		width: 100%;
+		transition: .3s;
+    padding: 2px;
+    border-radius: 10px;
+    
   }
 
-*/
+  .projectgallery_image:hover {
+    transform: scale(1.1);
+    cursor:pointer;
+    
+    
+  }
+
+  .projectgallery_modal{
+    margin: 2px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+
+  /* modal stuff */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 50; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+
+#contact {
+  background-color: #211726;
+  text-align: center;
+  font-size: 30px;
+  color: #1b1322;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 100vw;
+  overflow: hidden;
+  position:relative;
+  z-index: 20;
+}
+
+
+
 
 
 h1 {
@@ -1034,7 +1090,7 @@ header ul.active{
 }
 
 #skills{
-  height: 150vh;
+  height: 200vh;
 }
 
 #skills > h2{
@@ -1051,6 +1107,7 @@ header ul.active{
   height: 50%;
   width: 100%;
   transform: translate(0%, 100%);
+  padding-bottom:30px;
 }
 
 .skillcontainer{
@@ -1059,14 +1116,33 @@ header ul.active{
 }
 
 #skills > .container {
-  transform: translate(0%, -5%);
+  transform: translate(0%, -7.5%);
 }
 
 .aboutme {
   width: 100%;
   justify-content: center;
   align-items: center;
+  padding-top: 30px;
+  margin-top:30px;
+  
 }
 
+
+
+.projectgallery {
+	display: flex;
+  justify-content: center;
+  flex-direction: column;
+	padding: 2px 5px;;
+	transition: .3s;
+  width: 90vw;
+}
+
+.projectgallery_column {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
 
 }
