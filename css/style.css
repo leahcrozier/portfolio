@@ -38,7 +38,7 @@ body {
 }
 
 header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 50%;
     transform: translate(-50%, 0%);
@@ -49,7 +49,7 @@ header {
     font-size: 28px;
     align-items: center;
     justify-content: space-between;
-    z-index: 10;
+    z-index: 5;
     max-width: 1200px;
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
@@ -114,6 +114,9 @@ header ul li a:hover{
   transition: 0.3s ease-out;
 }
 
+.mobileMenu{
+  display:none;
+}
 
 
 #skills {
@@ -195,12 +198,12 @@ header ul li a:hover{
 }
 
 .ps{
-  width:65%; background-color: #A4BDD3;
+  width:65%; background-color: #7f96bc;
   border-radius: 20px;
 }
 
 .web{
-  width: 50%; background-color:#DDE6EC;
+  width: 50%; background-color:#A4BDD3;
   border-radius: 20px;
 }
 
@@ -313,15 +316,14 @@ header ul li a:hover{
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
 .close {
-  color: #aaa;
+  color: #dde6ec;
   float: right;
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Josefin Sans', serif;
 }
 
 .close:hover,
@@ -347,7 +349,6 @@ header ul li a:hover{
 
 .modalDialog {
 	position: fixed;
-	font-family: Arial, Helvetica, sans-serif;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -367,20 +368,37 @@ header ul li a:hover{
 }
 
 .modalDialog > div {
-	width: 400px;
+	width: 80vw;
+  height: auto;
 	position: relative;
 	margin: 10% auto;
-	padding: 5px 20px 13px 20px;
+	padding: 20px 20px 20px 20px;
 	border-radius: 10px;
 	background: #fff;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
+	background: -moz-linear-gradient(#DDE6EC, #a4bdd3);
+	background: -webkit-linear-gradient(#1b1322, #4c285b);
+	background: -o-linear-gradient(#DDE6EC, #a4bdd3);
+}
+.modalDialog h2{
+  color: #a4bdd3;
+  padding: 10px;
+  font-size: 25px;
+
 }
 
+.modalDialog p{
+  color: #a4bdd3;
+  padding: 10px;
+  font-size: 18px;
+
+}
+
+
+
 .close {
-	background: #606061;
-	color: #FFFFFF;
+	background: #724e91;
+	color: #dde6ec;
+  font-family: 'Josefin Sans', serif;
 	line-height: 25px;
 	position: absolute;
 	right: -12px;
@@ -388,7 +406,6 @@ header ul li a:hover{
 	top: -10px;
 	width: 24px;
 	text-decoration: none;
-	font-weight: bold;
 	-webkit-border-radius: 12px;
 	-moz-border-radius: 12px;
 	border-radius: 12px;
@@ -397,7 +414,109 @@ header ul li a:hover{
 	box-shadow: 1px 1px 3px #000;
 }
 
-.close:hover { background: #00d9ff; }
+
+.close:hover { background: #a4bdd3; }
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  max-height: 50vh;
+  overflow:hidden;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: block;
+}
+
+
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #1b1322;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 2px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-flex;
+  transition: background-color 0.6s ease;
+}
+
+.dot-container{
+  width: 20px;
+  padding: 0 50%;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+
 
 
 
@@ -419,12 +538,12 @@ header ul li a:hover{
   background-color: #211726;
   text-align: center;
   font-size: 30px;
-  color: #1b1322;
-  padding: 100px;
+  color: #dde6ec;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   height: 30vh;
   width: 100vw;
   overflow: hidden;
@@ -432,7 +551,27 @@ header ul li a:hover{
   z-index: 1;
 }
 
+#contact .linkscontainer{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
+#contact .contact{
+  font-size: 15px;
+  display: grid;
+  width: 100%;
+  
+  justify-content: space-around;
+  align-items: baseline;
+  justify-items: start;
+}
+
+#contact .container{
+  flex-direction: column;
+}
 
 
 
@@ -1080,7 +1219,7 @@ body::-webkit-scrollbar-thumb {
   }
 
 header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
@@ -1089,7 +1228,7 @@ header {
     font-size: 2vw;
     align-items: center;
     justify-content: space-between;
-    z-index: 10;
+    z-index: 5;
     transform: translate(0%, 0%);
 }
 
@@ -1103,6 +1242,10 @@ header ul {
     align-content: center;
     flex-direction: column;
     transition: 0.3s;
+}
+
+header ul li {
+  margin: 0px;
 }
 
 header li a {
@@ -1252,15 +1395,18 @@ nav ul.nav-menu {
   left: 0px;
   cursor: pointer;
   transition: all 0.6s ease-in-out;
+  
   /*end of div*/
 }
 .burger div {
   width: 33px;
   height: 4px;
-  background-color: #fff;
+  background-color: #d1ced2;
   display: block;
   margin: 5px 28px;
   transition: all 0.6s ease-in-out;
+  border-radius: 10px;
+  
 }
 .burger div:nth-child(1) {
   margin-top: 20px;
@@ -1275,21 +1421,25 @@ nav ul.nav-menu {
 .burger.active #one {
   transform: translateY(9px) rotate(-135deg);
   transition: all 0.6s ease-in-out;
-  background-color: #e74c3c;
+  background-color: #724E91;
+  border-radius: 10px;
 }
 .burger.active #two {
   opacity: 0;
   transition: 0.4s ease;
+  border-radius: 10px;
 }
 .burger.active #three {
   transform: translateY(-9px) rotate(-45deg);
   transition: all 0.6s ease-in-out;
-  background-color: #e74c3c;
+  background-color: #724E91;
+  border-radius: 10px;
 }
+
+
 
 #menu li
 {
-  padding: 10px 0;
   font-size: 22px;
 }
 
@@ -1298,7 +1448,7 @@ nav ul.nav-menu {
   left: -100vw;
   height: 100vh;
   position: fixed;
-  /* z-index: 10; */
+  /* z-index: 100; */
   top: 0px;
   transition: all 0.6s ease-in-out;
   transition-delay: 0.5s;
@@ -1318,7 +1468,7 @@ nav ul.nav-menu {
   transition: all 0.5s ease;
 }
 .menu-hide ul li:hover {
-  background-color: #e74c3c;
+  background-color: #A4BDD3;
   transition: all 0.5s ease;
 }
 .menu-hide ul li a {
@@ -1345,9 +1495,15 @@ nav ul.nav-menu {
 } */
 
 
+.mobileMenu{
+  display: block;
+  background-color: #d1ced2;
+  padding: 100px 0;
+}
 
-
-
+.mobileMenu a {
+  text-decoration: none;
+}
 
 
 
