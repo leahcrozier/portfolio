@@ -122,7 +122,7 @@ header ul li a:hover{
     background-color: #cfcdd1;
     align-items: center;
     justify-content: center;
-    height: auto;
+    height: 150vh;
     width: 100vw;
     overflow: hidden;
     display: flex;
@@ -217,9 +217,7 @@ header ul li a:hover{
   transform: translate(0%, 12.5%);
 }
 
-#skills{
-  height: 110vh;
-}
+
 
 .skills h2{
   display: block;
