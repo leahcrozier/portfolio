@@ -4,10 +4,10 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
-    <title>Portfolio</title>
+    <title>Leah Crozier's Portfolio</title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Leah Crozier">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -22,6 +22,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/flickity.css">
 
 <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -31,6 +32,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/flickity.pkgd.min.js"></script>
 
 
   
@@ -48,7 +50,6 @@
                 <li class="nav-item"><a href="#contact" class="nav-link" >Contact</a></li>
             </ul>
             <div id="hamburger" class="burger">
-              <!-- <input type="checkbox" class="menu-toggle" /> -->
              <div id="one"></div>
              <div id="two"></div>
              <div id="three"></div>
@@ -59,12 +60,10 @@
                 <a href="#skills"><li>Skills</li></a>
                 <a href="#projects"><li>Projects</li></a>
                 <a href="#contact"><li>Contact</li></a>
-                <!-- <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a> -->
               </ul>
             </div>  
         </nav>
     </header>
-    <!-- <button onclick="topFunction()" id="topbutton" title="Return to Top"> &#8593</button> -->
     <a href="#home" id="topbutton">&#8593</a>
     <section class="starwrapper">
         <div class="wrapper">
@@ -90,7 +89,8 @@
       <div class="container">
         <div class="aboutme"> 
             <img src="./images/selfportrait.png" class="selfportrait">
-            <div class="abtmetext"> hi im super duper cool </div>
+            <div class="abtmetext"><p> Hello! I'm a 17 year old British gal currently residing in the Netherlands. I've been interested in art, design, the internet and computers since I was little. For the past 6 years I've been part of the <a href="https://coderclass.nl/">Coderclass</a>, a section within the Metis Montessori Lyceum where I have worked on various projects, from a light-up skirt to a living room in VR. Some of these projects are listed below, along with other things I have made. </p></div>
+            <br><div class="skillstext"></p> My main skills lie in visual programs, such as After Effects, Blender and Photoshop. All of which I have been using regularly throughout the years and have gotten comfortable with. Besides that, I have some basic knowledge on coding languages such as HTML, CSS, Javascript, Python and a little bit of R and C#.</p></div>
         </div>
         <div class="skills"> 
             <h2>After Effects</h2>
@@ -118,6 +118,7 @@
             </div>
 
         </div>
+        
      </div>
     </section>
 
@@ -128,29 +129,26 @@
         <!-- column 1 -->
 
         <div class="projectgallery_column">
-          <!-- img 1 - 3 -->
           
           <a href="#project1" alt="3D Living Room" class="projectgallery_modal project1"><img src="./images/projects/livingroom/Living Room 1.png" class="projectgallery_image"></a>
-          <a href="#project4" alt="" class="projectgallery_modal project4"><img src="https://preview.redd.it/fikutfdyqb1a1.jpg?width=640&crop=smart&auto=webp&s=0e4f3484530d510ee6c284967d2030770d9e0a84" class="projectgallery_image"></a>
-          <a href="#project7" alt="" class="projectgallery_modal project7"><img src="https://preview.redd.it/fikutfdyqb1a1.jpg?width=640&crop=smart&auto=webp&s=0e4f3484530d510ee6c284967d2030770d9e0a84" class="projectgallery_image"></a>
+          <a href="#project4" alt="Angel Statue" class="projectgallery_modal project4"><img src="./images/projects/angelstatue/IMG_2457.jpg" class="projectgallery_image"></a>
+          <a href="#project7" alt="Escape Room" class="projectgallery_modal project7"><img src="./images/projects/escaperoom/escaperoom4.png" class="projectgallery_image"></a>
         </div>
 
         <!-- column 2 -->
 
         <div class="projectgallery_column">
-          <!-- img 1 - 3 -->
           <a href="#project2" alt="Jellyfish" class="projectgallery_modal project2"><img src="./images/projects/jellyfish/jellyfish1.png" class="projectgallery_image"></a>
-          <a href="#project5" alt="Project 1" class="projectgallery_modal project5"><img src="https://preview.redd.it/fikutfdyqb1a1.jpg?width=640&crop=smart&auto=webp&s=0e4f3484530d510ee6c284967d2030770d9e0a84" class="projectgallery_image"></a>
-          <a href="#project8" alt="Project 1" class="projectgallery_modal project8"><img src="https://preview.redd.it/fikutfdyqb1a1.jpg?width=640&crop=smart&auto=webp&s=0e4f3484530d510ee6c284967d2030770d9e0a84" class="projectgallery_image"></a>
+          <a href="#project5" alt="Fury Fly" class="projectgallery_modal project5"><img src="./images/projects/furyfly/furyflygameplay2.png" class="projectgallery_image"></a>
+          <a href="#project8" alt="Fractals" class="projectgallery_modal project8"><img src="./images/projects/fractals/fractal6.png" class="projectgallery_image"></a>
         </div>
 
         <!-- column 3 -->
 
         <div class="projectgallery_column">
-          <!-- img 1 - 3 -->
           <a href="#project3" alt="Yearbook Design" class="projectgallery_modal project3"><img src="./images/projects/jaarboek/jaarboek ontwerp voorkant.png" class="projectgallery_image"></a>
-          <a href="#project6" alt="Project 1" class="projectgallery_modal project6"><img src="https://preview.redd.it/fikutfdyqb1a1.jpg?width=640&crop=smart&auto=webp&s=0e4f3484530d510ee6c284967d2030770d9e0a84" class="projectgallery_image"></a>
-          <a href="#project9" alt="Project 1" class="projectgallery_modal project9"><img src="https://preview.redd.it/fikutfdyqb1a1.jpg?width=640&crop=smart&auto=webp&s=0e4f3484530d510ee6c284967d2030770d9e0a84" class="projectgallery_image"></a>
+          <a href="#project6" alt="Unity VR Room" class="projectgallery_modal project6"><img src="./images/projects/vr-room/vr-room1.png" class="projectgallery_image"></a>
+          <a href="#project9" alt="Froggy" class="projectgallery_modal project9"><img src="./images/projects/froggy/froggy dude.png" class="projectgallery_image"></a>
         </div>
       
         <!-- project 1 - Living Room -->
@@ -158,32 +156,31 @@
           <!-- Modal content -->
           <div>
             <a href="#close" title="Close" class="close">x</a>
-            <!-- <img class="modal-content"> -->
-            <h2>hi</h2>
+            <h2>3D Living Room</h2>
             <!-- Slideshow container -->
-            <div class="slideshow-container slider" id="div1">
-              <div class="mySlides fade">
-                <img src="./images/projects/livingroom/Living Room 1.png" style="width:auto; max-height:50vh">
+            <div class="gallery js-flickity" id="div1">
+              <div class="gallery-cell">
+                <img src="./images/projects/livingroom/Living Room 1.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
               </div>
 
-              <div class="mySlides fade">
-                <img src="./images/projects/livingroom/Living Room 2.png" style="width:auto; max-height:50vh">
+              <div class="gallery-cell">
+                <img src="./images/projects/livingroom/Living Room 2.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
               </div>
 
-              <div class="mySlides fade">
-                <img src="./images/projects/livingroom/Living Room 3.png" style="width:auto; max-height:50vh">
+              <div class="gallery-cell">
+                <img src="./images/projects/livingroom/Living Room 3.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
               </div>
 
-              <div class="mySlides fade">
-                <img src="./images/projects/livingroom/Living Room 4.png" style="width:auto; max-height:50vh">
+              <div class="gallery-cell">
+                <img src="./images/projects/livingroom/Living Room 4.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
               </div>
-
-              <!-- Next and previous buttons -->
-              <a class="prev" onclick="plusDivs(this,-1)">&#10094;</a>
-              <a class="next" onclick="plusDivs(this,1)">&#10095;</a>
             </div>
             <br>
-            <p>aaaaa</p>
+            <p>A 3D living room created in Blender. For the basic idea/layout, I followed <a href="https://youtu.be/dEGJeVnWZAA">this</a> tutorial on Youtube. After that, I decided to put my own spin on it and create a modern-day witchy room (which should explain the witch hat!). </p>
           </div>
         </div>
 
@@ -193,29 +190,31 @@
           <div>
             <a href="#close" title="Close" class="close">x</a>
             <!-- <img class="modal-content"> -->
-            <h2>hi</h2>
+            <h2>Jellyfish</h2>
             <!-- Slideshow container -->
-            <div class="slideshow-container slider">
-
-              <!-- Full-width images with number and caption text -->
-              <div class="mySlides fade">
-                <img src="https://cdn.discordapp.com/attachments/749050216187166923/1090191643996598352/IMG_7728.jpg" style="width:auto; max-height:50vh">
+            <div class="gallery js-flickity" id="div2">
+              <div class="gallery-cell">
+                <img src="./images/projects/jellyfish/jellyfish1.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
               </div>
 
-              <div class="mySlides fade">
-                <img src="https://cdn.discordapp.com/attachments/749050216187166923/1090191643996598352/IMG_7728.jpg" style="width:auto; max-height:50vh">
+              <div class="gallery-cell">
+                <img src="./images/projects/jellyfish/jellyfish2.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
               </div>
 
-              <div class="mySlides fade">
-                <img src="https://cdn.discordapp.com/attachments/749050216187166923/1090191643996598352/IMG_7728.jpg" style="width:auto; max-height:50vh">
+              <div class="gallery-cell">
+                <img src="./images/projects/jellyfish/jellyfish3.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
               </div>
 
-              <!-- Next and previous buttons -->
-              <a class="prev" onclick="plusDivs(this,1)">&#10094;</a>
-              <a class="next" onclick="plusDivs(this,1)">&#10095;</a>
+              <div class="gallery-cell">
+                <iframe width="330" height="587" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto" src="https://www.youtube.com/embed/ztEEoDM8z14" title="Jellyfish 3D Render (Blender)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
             </div>
             <br>
-            <p>aaaaa</p>
+            <p>A couple renders and an animation made in Blender. Mostly made to practice with lighting, materials, geometry nodes and fluid simulations. The animation (with the fluid simulation) is in the last slide.</p>
           </div>
         </div>
 
@@ -225,32 +224,239 @@
           <div>
             <a href="#close" title="Close" class="close">x</a>
             <!-- <img class="modal-content"> -->
-            <h2>hi</h2>
+            <h2>Yearbook Cover</h2>
             <!-- Slideshow container -->
-            <div class="slideshow-container slider">
-
-              <!-- Full-width images with number and caption text -->
-              <div class="mySlides fade">
-                <img src="https://cdn.discordapp.com/attachments/749050216187166923/1090191643996598352/IMG_7728.jpg" style="width:auto; max-height:50vh">
+            <div class="gallery js-flickity" id="div3">
+              <div class="gallery-cell">
+                <img src="./images/projects/jaarboek/jaarboek ontwerp voorkant.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
               </div>
 
-              <div class="mySlides fade">
-                <img src="https://cdn.discordapp.com/attachments/749050216187166923/1089577716195540992/IMG_2448.jpg" style="width:auto; max-height:50vh">
+              <div class="gallery-cell">
+                <img src="./images/projects/jaarboek/jaarboek ontwerp achterkant.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
               </div>
-
-              <div class="mySlides fade">
-                <img src="https://cdn.discordapp.com/attachments/749050216187166923/993509777902686368/DC11C479-92F9-437A-9648-9068693C1C5E.jpg" style="width:auto; max-height:50vh">
-              </div>
-
-              <!-- Next and previous buttons -->
-              <a class="prev" onclick="plusDivs(this,1)">&#10094;</a>
-              <a class="next" onclick="plusDivs(this,1)">&#10095;</a>
             </div>
             <br>
-            <p>aaaaa</p>
+            <p>These yearbook covers were for an art project and created in Photoshop. They were highly inspired by retro futuristic pictures. The statue on the back cover is Metis, a greek goddess. </p>
           </div>
         </div>
 
+        <!-- Project 4 - 3D Print Angel  -->
+        <div id="project4" class="modalDialog">
+          <!-- Modal content -->
+          <div>
+            <a href="#close" title="Close" class="close">x</a>
+            <!-- <img class="modal-content"> -->
+            <h2>3D Printed Angel Statue</h2>
+            <!-- Slideshow container -->
+            <div class="gallery js-flickity" id="div4">
+              <div class="gallery-cell">
+                <img src="./images/projects/angelstatue/IMG_2457.jpg" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+
+              <div class="gallery-cell">
+                <img src="./images/projects/angelstatue/wip4.PNG" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+
+              <div class="gallery-cell">
+                <img src="./images/projects/angelstatue/wip 3.PNG" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+
+              <div class="gallery-cell">
+                <img src="./images/projects/angelstatue/wip 2.PNG" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+
+              <div class="gallery-cell">
+                <img src="./images/projects/angelstatue/wip 1.PNG" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+            </div>
+            <br>
+            <p>A 3D printed "statue" made as part of a large project (profielwerkstuk) on the definitions of digital art. The model itself was made in Blender (slides 2-5), sliced in Prusa Slicer, and printed on a Prusa i3 MK3S. This was my first real attempt at 3D printing, so the model itself is slightly messy. If I were to print it again, I would probably play around with the layer heights to try and make it look a bit cleaner. </p>
+          </div>
+        </div>
+
+
+        <!-- Project 5 - Fury Fly  -->
+        <div id="project5" class="modalDialog">
+          <!-- Modal content -->
+          <div>
+            <a href="#close" title="Close" class="close">x</a>
+            <!-- <img class="modal-content"> -->
+            <h2>Fury Fly in the Witches' Kitchen</h2>
+            <!-- Slideshow container -->
+            <div class="gallery js-flickity" id="div5">
+              <div class="gallery-cell">
+                <img src="./images/projects/furyfly/furyflygameplay.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+
+              <div class="gallery-cell">
+                <img src="./images/projects/furyfly/Fury Fly gameplay.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+              <div class="gallery-cell">
+                <img src="./images/projects/furyfly/Fury Fly logo.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+            </div>
+            <br>
+            <p>A multiplayer (2 player) platformer where two chubby flies try their best to be the last to survive in the Witches' kitchen, where the water rises after a while. This game was made during an 8-hour Game Jam, together with <a href="http://www.jochembaas.nl/">Jochem Baas</a>, <a href="http://luuknoverraz.nl/">Luuk Noverraz</a>, and <a href="http://codemaker4.github.io/">Codemaker_4</a>. The theme of the Game Jam was "30 seconds", so each match has a 30-second timer. If you would like to play it, you can do so <a href="https://codemaker4.github.io/fury-fly/index.html">here</a>.  </p>
+          </div>
+        </div>
+
+
+        <!-- Project 6 - Unity VR Room  -->
+        <div id="project6" class="modalDialog">
+          <!-- Modal content -->
+          <div>
+            <a href="#close" title="Close" class="close">x</a>
+            <!-- <img class="modal-content"> -->
+            <h2>Unity VR Room</h2>
+            <!-- Slideshow container -->
+            <div class="gallery js-flickity" id="div6">
+              <div class="gallery-cell">
+                <img src="./images/projects/vr-room/vr-room1.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+
+              <div class="gallery-cell">
+                <img src="./images/projects/vr-room/render.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+              <div class="gallery-cell">
+                <img src="./images/projects/vr-room/render 2.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+              <div class="gallery-cell">
+                <img src="./images/projects/vr-room/render 3.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+              <div class="gallery-cell">
+                <img src="./images/projects/vr-room/schets 1.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+              <div class="gallery-cell">
+                <img src="./images/projects/vr-room/schets 2.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+            </div>
+            <br>
+            <p>This living room/kitchen was made as a Unity VR project. Small items, such as plates, cups and books can be picked up and thrown, and light switches are able to be interacted with as well. All of the models used were created in Blender and imported into Unity, so it can be viewed in VR. </p>
+          </div>
+        </div>
+
+
+        <!-- Project 7 - Escape Room  -->
+        <div id="project7" class="modalDialog">
+          <!-- Modal content -->
+          <div>
+            <a href="#close" title="Close" class="close">x</a>
+            <!-- <img class="modal-content"> -->
+            <h2>Escape Room</h2>
+            <!-- Slideshow container -->
+            <div class="gallery js-flickity" id="div7">
+              <div class="gallery-cell">
+                <img src="./images/projects/escaperoom/escaperoom4.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+
+              <div class="gallery-cell">
+                <img src="./images/projects/escaperoom/escaperoom1.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+              <div class="gallery-cell">
+                <img src="./images/projects/escaperoom/escaperoom2.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+              <div class="gallery-cell">
+                <img src="./images/projects/escaperoom/escaperoom3.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+              <div class="gallery-cell">
+                <img src="./images/projects/escaperoom/escaperoom5.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+            </div>
+            <br>
+            <p>For a project,<a href="https://github.com/DivyaBhulai"> Divya</a> and myself transformed a classroom into an Escape room. There were a variety of puzzles, including a Blender "Game", where the player had to walk through a recreated version of the classroom they were in to find clues, to then be able to locate parts of a code in the real world. To escape, they needed to enter the correct 4-number code into a Micro:Bit lock (slide 5)</p>
+          </div>
+        </div>
+
+
+        <!-- Project 8 - Fractals  -->
+        <div id="project8" class="modalDialog">
+          <!-- Modal content -->
+          <div>
+            <a href="#close" title="Close" class="close">x</a>
+            <!-- <img class="modal-content"> -->
+            <h2>Fractals</h2>
+            <!-- Slideshow container -->
+            <div class="gallery js-flickity" id="div8">
+              <div class="gallery-cell">
+                <img src="./images/projects/fractals/fractal6.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+
+              <div class="gallery-cell">
+                <img src="./images/projects/fractals/fractal5.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+              <div class="gallery-cell">
+                <img src="./images/projects/fractals/fractal4.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+              <div class="gallery-cell">
+                <img src="./images/projects/fractals/fractal2.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+              <div class="gallery-cell">
+                <img src="./images/projects/fractals/fractal1.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+            </div>
+            <br>
+            <p>This series of Mandelbrot fractals was made for the same project as the angel statue. The images themselves were created using C# in Unity.</p>
+          </div>
+        </div>
+
+
+        <!-- Project 9 - Froggy  -->
+        <div id="project9" class="modalDialog">
+          <!-- Modal content -->
+          <div>
+            <a href="#close" title="Close" class="close">x</a>
+            <!-- <img class="modal-content"> -->
+            <h2>Froggy</h2>
+            <!-- Slideshow container -->
+            <div class="gallery js-flickity" id="div9">
+              <div class="gallery-cell">
+                <img src="./images/projects/froggy/froggy dude.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+
+              <div class="gallery-cell">
+                <img src="./images/projects/froggy/froggy dude 2.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+              <div class="gallery-cell">
+                <img src="./images/projects/froggy/froggy dude pixelated.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+              <div class="gallery-cell">
+                <img src="./images/projects/froggy/froggy dude pixelated 2.png" style="width:auto; max-height:50vh; margin-left: auto;
+                margin-right: auto">
+              </div>
+            </div>
+            <br>
+            <p>To create this distinguished gentlefrog I followed <a href="https://youtu.be/rEBwBrRzyhw">this</a> tutorial. This was mostly to practice creating models from a 2D reference and texture painting, two things which have proven to be very useful! </p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -273,11 +479,8 @@
             scale: 70%;"></a>
           <a href="https://twitter.com/aurralix"><img src="https://img.icons8.com/ios-filled/50/FFFFFF/twitter.png" class="socialicon" style="
             scale: 70%;"></a>
-          <a href="https://instagram.com/leahrvse?igshid=YmMyMTA2M2Y="><img src="https://img.icons8.com/ios/50/FFFFFF/instagram-new--v1.png" class="socialicon" style="
-            scale: 70%;"></a>
         </div>
       </div>
-      
     </section>
     
     

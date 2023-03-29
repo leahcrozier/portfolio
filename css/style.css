@@ -31,7 +31,6 @@ body {
   max-width: 1200px;
   transform: translate(0%, 25%);
   margin: auto;
-  /* position: relative; */
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -51,7 +50,7 @@ header {
     justify-content: space-between;
     z-index: 5;
     max-width: 1200px;
-    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    transition: top 0.3s; 
 }
 
 header .logo {
@@ -139,10 +138,53 @@ header ul li a:hover{
     padding: 50px;
 }
 
+
+/* unvisited link */
+#skills a:link {
+  color: #4c285b;
+}
+
+/* visited link */
+#skills a:visited {
+  color: #a4bdd3;
+}
+
+/* mouse over link */
+#skills a:hover {
+  color: #724e91;
+}
+
+/* selected link */
+#skills a:active {
+  color: #1b1322;
+}
+
+
+/* unvisited link */
+#projects a:link {
+  color: #1b1322;
+}
+
+/* visited link */
+#projects a:visited {
+  color: #a4bdd3;
+}
+
+/* mouse over link */
+#projects a:hover {
+  color: #724e91;
+}
+
+/* selected link */
+#projects a:active {
+  color: #1b1322;
+}
+
+
 .aboutme {
    display: grid;
     text-align: center;
-    font-size: 25px;
+    font-size: 16px;
     color: #1b1322;
     justify-content: center;
     align-items: start;
@@ -151,12 +193,32 @@ header ul li a:hover{
     
 }
 
+.abtmetext{
+    display: grid;
+    text-align: center;
+    font-size: 16px;
+    color: #1b1322;
+    justify-content: center;
+    align-items: start;
+    justify-items: center;
+}
+
+.skillstext{
+  display: grid;
+  text-align: center;
+  font-size: 16px;
+  color: #1b1322;
+  justify-content: center;
+  align-items: start;
+  justify-items: center;
+}
+
 #skills > .container {
   transform: translate(0%, 12.5%);
 }
 
 #skills{
-  height: 150vh;
+  height: 110vh;
 }
 
 .skills h2{
@@ -171,8 +233,8 @@ header ul li a:hover{
 }
 
 .skills {
-  height: 50%;
-  width: 100%;
+  height: 45%;
+  width: 50%;
   padding-bottom: 10px;
   
 }
@@ -217,6 +279,8 @@ header ul li a:hover{
 .selfportrait {
     width: 500px;
     height: 500px;
+    margin-bottom: 50px;
+    margin-top: -25px;
 }
 
 .skilllist{
@@ -296,29 +360,28 @@ header ul li a:hover{
 
 
   /* modal stuff */
-/* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 50; /* Sit on top */
+  display: none;
+  position: fixed;
+  z-index: 50; 
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
 }
 
-/* Modal Content/Box */
+
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
 }
 
-/* The Close Button */
+
 .close {
   color: #dde6ec;
   float: right;
@@ -333,19 +396,12 @@ header ul li a:hover{
   cursor: pointer;
 }
 
-/* Modal Content (Image) */
 .modal-content {
   margin: auto;
   display: block;
   width: 80%;
   max-width: 700px;
 }
-
-
-
-
-
-
 
 .modalDialog {
 	position: fixed;
@@ -394,7 +450,6 @@ header ul li a:hover{
 }
 
 
-
 .close {
 	background: #724e91;
 	color: #dde6ec;
@@ -417,122 +472,8 @@ header ul li a:hover{
 
 .close:hover { background: #a4bdd3; }
 
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  max-height: 50vh;
-  overflow:hidden;
-  position: relative;
-
-}
-
-/* Hide the images by default */
-.mySlides {
-  
-  display: block;
-
-}
-
-
-
-
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: #1b1322;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 8px;
-  width: 8px;
-  margin: 2px 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-flex;
-  transition: background-color 0.6s ease;
-}
-
-.dot-container{
-  width: 20px;
-  padding: 0 50%;
-}
-
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-
-
-
-
-
-
-
-
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
+.gallery {
+  align-items: center;
 }
 
 
@@ -550,7 +491,7 @@ header ul li a:hover{
   width: 100vw;
   overflow: hidden;
   position:relative;
-  z-index: 1;
+  z-index: 0;
 }
 
 #contact .linkscontainer{
@@ -606,20 +547,11 @@ h2 .home {
 }
 
 .home_top_text {
-     /* display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items:  center; */
      width: 75%;
      padding: 0 16px;
      transform: translate(0%, 15%);
 }
 .home_top_pic {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:  center; */
-  /* height: 100vh; */
   width: 25%;
   transform: translate(0%, 15%);
   
@@ -666,23 +598,23 @@ body::-webkit-scrollbar-thumb {
 
 #topbutton {
   
-  position: fixed; /* Fixed/sticky position */
-  bottom: 30px; /* Place the button at the bottom of the page */
-  right: 50px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: #4c285b; /* Set a background color */
-  color: #DDE6EC; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  position: fixed; 
+  bottom: 30px; 
+  right: 50px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: #4c285b; 
+  color: #DDE6EC; 
+  cursor: pointer;
+  padding: 15px; 
+  border-radius: 10px;
+  font-size: 18px; 
   text-decoration: none;
 }
 
 #topbutton:hover {
-  background-color: #a4bdd3; /* Add a dark-grey background on hover */
+  background-color: #a4bdd3; 
   color: #1B1322;
 }
 
@@ -1214,7 +1146,6 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     margin: auto;
-    /* position: relative; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1263,8 +1194,6 @@ nav ul.nav-menu {
   
     display: block;
     position: relative;
-    /* top: 50px;
-    left: 50px; */
     
     z-index: 1;
     
@@ -1285,109 +1214,6 @@ nav ul.nav-menu {
   color: tomato;
 }
 
-
-/* #hamburger input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  
-  cursor: pointer;
-  
-  opacity: 0;
-  z-index: 2;
-  
-  -webkit-touch-callout: none;
-} */
-
-/*
- * Just a quick hamburger
- */
- /* #hamburger span
- {
-   display: block;
-   width: 33px;
-   height: 4px;
-   margin-bottom: 5px;
-   position: relative;
-   
-   background: #fff;
-   border-radius: 3px;
-   
-   z-index: 1;
-   
-   transform-origin: 4px 0px;
-   
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-               opacity 0.55s ease;
- } */
-/*  
- #hamburger span:first-child
- {
-   transform-origin: 0% 0%;
- }
- 
- #hamburger span:nth-last-child(2)
- {
-   transform-origin: 0% 100%;
- } */
- 
- /* 
-  * Transform all the slices of hamburger
-  * into a crossmark.
-  */
- /* #hamburger input:checked ~ span
- {
-   opacity: 1;
-   transform: rotate(45deg) translate(-2px, -1px);
-   background: #232323;
- } */
- 
- /*
-  * But let's hide the middle one.
-  */
- /* #hamburger input:checked ~ span:nth-last-child(3)
- {
-   opacity: 0;
-   transform: rotate(0deg) scale(0.2, 0.2);
- } */
- 
- /*
-  * Ohyeah and the last one should go the other direction
-  */
- /* #hamburger input:checked ~ span:nth-last-child(2)
- {
-   transform: rotate(-45deg) translate(0, -1px);
- } */
-
-/* /*
- * Make this absolute positioned
- * at the top left of the screen
- */
-/* #menu
-{ */
-  /* position: fixed;
-  width: 100vw;
-  height: 100vh; */
-  /* margin: -100px 0 0 -50px; */
-  /* padding: 50px;
-  padding-top: 125px;
-  
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased; */
-  /* to stop flickering of text in safari */
-  
-  /* transform-origin: 0% 0%; */
-  /* transform: translate(100%, 0); */
-  
-  /* transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); */
-/* } */
-
 .burger {
   width: 90px;
   height: 70px;
@@ -1398,7 +1224,6 @@ nav ul.nav-menu {
   cursor: pointer;
   transition: all 0.6s ease-in-out;
   
-  /*end of div*/
 }
 .burger div {
   width: 33px;
@@ -1414,12 +1239,7 @@ nav ul.nav-menu {
   margin-top: 20px;
 }
 
-/*end of menu-tab*/
-/* .burger.active { */
-  /* left: 345px; */
-  /* transition: all 600ms ease-in-out; */
-  /* background-color: rgba(255, 255, 255, 1); */
-/* } */
+
 .burger.active #one {
   transform: translateY(9px) rotate(-135deg);
   transition: all 0.6s ease-in-out;
@@ -1450,18 +1270,11 @@ nav ul.nav-menu {
   left: -100vw;
   height: 100vh;
   position: fixed;
-  /* z-index: 100; */
   top: 0px;
   transition: all 0.6s ease-in-out;
   transition-delay: 0.5s;
-  /*end of nav*/
 }
-/* .menu-hide nav {
 
-}
-.menu-hide nav ul {
-
-} */
 .menu-hide ul li {
   height: 70px;
   list-style-type: none;
@@ -1480,21 +1293,12 @@ nav ul.nav-menu {
   font-weight: 800;
 }
 
-/*end of menu-hide*/
+
 .menu-hide.show {
   left: 0px;
   background-color: rgba(255, 255, 255, 1);
   transition: all 0.6s ease-in-out;
 }
-
-/*
- * And let's slide it in from the left
- */
-/* #hamburger input:checked ~ ul
-{
-  transform: translate(calc(-100vw + 100px));
-  overflow-y: hidden;
-} */
 
 
 .mobileMenu{
@@ -1535,7 +1339,8 @@ header ul.active{
 }
 
 #skills{
-  height: 200vh;
+  height: 150vh;
+  width: 100%;
 }
 
 #skills > h2{
@@ -1548,10 +1353,14 @@ header ul.active{
   font-weight: bold;
 }
 
-.skills {
-  height: 50%;
+#skills > div{
   width: 100%;
-  transform: translate(0%, 100%);
+}
+
+.skills {
+  height: 40%;
+  width: 85%;
+  transform: translate(0%, 140%);
   padding-bottom:30px;
 }
 
@@ -1571,6 +1380,11 @@ header ul.active{
   padding-top: 30px;
   margin-top:30px;
   
+}
+
+.selfportrait{
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 
