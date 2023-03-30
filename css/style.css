@@ -1405,15 +1405,15 @@ header ul.active{
 
 @media screen and (max-width: 375px){
 #skills{
-  height: 170vh;
+  height: 195vh;
   width: 100%;
 }
 
 
 .skills {
-  height: 45%;
+  height: 40%;
   width: 85%;
-  transform: translate(0%, 140%);
+  transform: translate(0%, 170%);
   padding-bottom:30px;
 }
 
@@ -1429,6 +1429,15 @@ header ul.active{
   max-width: 100vw;
 }
 
+.modalDialog p {
+  color: #a4bdd3;
+  padding: 10px;
+  font-size: 18px;
+  display:block;
+  font-size: 14px;
+  max-width: 100vw;
+
 }
 
 
+}
